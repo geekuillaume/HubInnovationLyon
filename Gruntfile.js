@@ -173,9 +173,9 @@ module.exports = function (grunt) {
                 files: {
                     src: [
                         '<%= config.dist %>/js/{,*/}*.js',
-                        '<%= config.dist %>/css/{,*/}*.css',
+                        '<%= config.dist %>/styles/{,*/}*.css',
                         '<%= config.dist %>/img/{,*/}*.*',
-                        '<%= config.dist %>/css/fonts/{,*/}*.*',
+                        '<%= config.dist %>/styles/fonts/{,*/}*.*',
                         '<%= config.dist %>/*.{ico,png}'
                     ]
                 }
@@ -198,7 +198,7 @@ module.exports = function (grunt) {
                 assetsDirs: ['<%= config.dist %>', '<%= config.dist %>/images']
             },
             html: ['<%= config.dist %>/{,*/}*.html'],
-            css: ['<%= config.dist %>/css/{,*/}*.css']
+            css: ['<%= config.dist %>/styles/{,*/}*.css']
         },
 
         // The following *-min tasks produce minified files in the dist folder
